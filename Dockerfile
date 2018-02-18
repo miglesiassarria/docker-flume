@@ -16,4 +16,4 @@ ADD apache-flume-1.8.0-bin /flume/apache-flume-1.8.0-bin
 
 RUN ln -sf /flume/apache-flume-1.8.0-bin/bin/flume-ng /usr/bin/flume-ng
 
-CMD ["flume-ng agent --conf $FLUME_CONF/ --conf-file $FLUME_CONF/test.conf --name a1 -Dflume.root.logger=INFO,console"]
+CMD ["flume-ng agent --conf $FLUME_CONF/ --conf-file $FLUME_CONF/flume.conf --name a1 -Dflume.root.logger=INFO,console"]
